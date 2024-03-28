@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -27,7 +27,6 @@ body{
     width: 100%; 
 }
 
-
 .header-line{
     padding-top: 15px;
     padding-left: 30px;
@@ -50,7 +49,8 @@ body{
     color: black;
     margin-right: 2vw;
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: "Play", sans-serif;
 }
 
 .header-logo{
@@ -58,6 +58,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 150px;
+    margin-bottom: 10px;
 }
 
 .logo{
@@ -74,6 +75,7 @@ body{
     background-image: linear-gradient(to right, #627254, #00FFAB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Play", sans-serif;
 }
 
 .cart-icon{
@@ -106,9 +108,16 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
+.h1{
+    font-weight: 500;
+    text-align: center;
+    font-size: 26px;
+}
+
 td{
     font-size: 20px;
     font-weight: 500;
+    font-family: "Play", sans-serif;
 }
 
 table{
@@ -117,9 +126,6 @@ table{
     border: 2px solid #00FFAB;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-}
-
-table{
     margin: 20px;
 }
 
@@ -141,19 +147,21 @@ table{
 
 .text{
     margin: 20px;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
     font-weight: 400;
     text-align: center;
+    font-family: "Play", sans-serif;
 }
 
 a{
     text-decoration: none;
 }
-h1{
+.h1{
     text-align: center;
     padding-top: 20px;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: "Play", sans-serif;
 }
 
 .container-3{
