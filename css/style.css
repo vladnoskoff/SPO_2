@@ -88,6 +88,7 @@ body{
     border-radius: 10px;
     width: 50%;
     background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .zakaz{
@@ -98,6 +99,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 td{
