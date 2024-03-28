@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-image: url('../img/6189857_3179887.jpg');
+    width: 100vw;
+}
+
+.container-1{
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+    display: flex;
+    position: fixed;  
+    top: 0;  
+    z-index: 100;  
+    width: 100%; 
+}
+
+
+.header-line{
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav{
+    text-decoration: none;
+    color: black;
+    margin-right: 2vw;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.header-logo{
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.cart-icon{
+    height: 50px;
+    width: 50px;
+}
+
+.container-2{
+    margin-bottom: 20px;
+    display: flex;
+    margin-top: 130px;
+}
+
+.content{
+    margin: 20px;
+    border-radius: 10px;
+    width: 50%;
+    background-color: white;
+}
+
+.zakaz{
+    margin: 20px;
+    border-radius: 10px;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+td{
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+table{
+    margin: 20px;
+}
+
+.btn{
+    background-color: #00FFAB;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.text{
+    margin: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.container-3{
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    height: 150px;
+    width: 100%;
+    border-top: 2px solid gray;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:0px;
+}
