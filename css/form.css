@@ -13,7 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background: rgb(130, 106, 251);
+    background-image: url('../img/6189857_3179887.jpg');
 }
 
 .container{
@@ -44,6 +44,10 @@ body{
 
 .input-box label{
     color: #333;
+}
+
+.hz{
+    margin-top: 20px;
 }
 
 .form :where(.input-box input, .select-box){
@@ -92,7 +96,7 @@ body{
 }
 
 .volume input{
-    accent-color: rgb(130, 106, 251);
+    accent-color: #00FFAB;
 }
 
 .form :where(.volume input, .volume label){
@@ -118,7 +122,7 @@ button{
     cursor: pointer;
     border-radius: 6px;
     font-weight: 400;
-    background-color: rgb(130, 106, 251);
+    background-color: #00FFAB;
 }
 
 @media screen  and (max-width: 500px){
