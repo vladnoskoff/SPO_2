@@ -133,7 +133,8 @@ table{
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
@@ -143,6 +144,7 @@ table{
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 400;
+    text-align: center;
 }
 
 a{
