@@ -50,7 +50,7 @@ body{
     color: black;
     margin-right: 2vw;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .header-logo{
@@ -116,6 +116,7 @@ table{
     border-collapse: separate;
     border: 2px solid #00FFAB;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 table{
@@ -134,6 +135,7 @@ table{
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .text{
