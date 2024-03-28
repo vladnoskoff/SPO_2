@@ -41,6 +41,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav{
@@ -52,7 +54,6 @@ body{
 }
 
 .header-logo{
-    margin-right: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,10 +107,15 @@ body{
 }
 
 td{
-    border: 2px solid green;
-    border-radius: 5px;
     font-size: 20px;
     font-weight: 500;
+}
+
+table{
+    border-spacing: 30px 30px;
+    border-collapse: separate;
+    border: 2px solid #00FFAB;
+    border-radius: 10px;
 }
 
 table{
