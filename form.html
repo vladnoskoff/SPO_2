@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <section class="container">
+        <header>Заполните Форму</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Полное Имя</label>
+                <input type="text" placeholder="Введите ваше полное имя" required>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Номер Телефона</label>
+                    <input type="number" placeholder="Введите ваш номер телефона" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Дата Вывоза</label>
+                    <input type="date" placeholder="Введите дату вывоза мусора" required>
+                </div>
+            </div>
+            
+            <p class="hz">Тип Мусора</p>
+            <div class="select-box">
+                <select>
+                    <option hidden>Тип мусора</option>
+                    <option>Твердые коммунальные отходы (ТКО)</option>
+                    <option>Крупногабаритный мусор (КГМ)</option>
+                    <option>Строительный мусор</option>
+                </select>
+            </div>
+
+            <div class="volume-box">
+                <h3>Объём вывозимого мусора</h3>
+                <div class="volume-option">
+                    <div class="volume">
+                        <input type="radio" id="check" name="volume">
+                        <label for="check-8">8 м3</label>
+                    </div>
+                    <div class="volume">
+                        <input type="radio" id="check" name="volume" checked>
+                        <label for="check-20">20-27 м3</label>
+                    </div>
+                    <div class="volume">
+                        <input type="radio" id="check" name="volume">
+                        <label for="check-32">32-38 м3</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Адрес</label>
+                <input type="text" placeholder="Введите ваш адрес" required>
+                <input type="text" placeholder="Повторно введите ваш адрес" required>
+                <input type="number" placeholder="Введите ваш почтовый индекс" required>
+            </div>
+
+            <button>Отправить заявку</button>
+        </form>
+    </section>
+</body>
+</html>

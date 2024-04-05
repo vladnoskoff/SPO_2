@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Создать Аккаунт</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-vk"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <span>Или использовать вашу почту для регистрации</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form action="main.html">
+                <h1>Войти в Аккаунт</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-vk"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <span>Или использовать вашу почту для входа</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Забыли Пароль?</a>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>С Возвращением</h1>
+                    <p>Введите ваши личные данные для использования всех возможностей сайта</p>
+                    <button class="hidden" id="login*">Sign In</button>
+                </div>
+
+                <div class="toggle-panel toggle-right">
+                    <h1>Добро Пожаловать</h1>
+                    <p>Зарегистрируйтесь с использованием ваших личных данных для использования всех возможностей сайта</p>
+                    <button class="hidden" id="register*">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/registration.js"></script>
+</body>
+</html>
