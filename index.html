@@ -11,7 +11,7 @@
     
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form>
+            <form action="reg.php" method="post">
                 <h1>Создать Аккаунт</h1>
                 <div class="social-icons">
                     <a href="#" class="icon">
@@ -25,15 +25,15 @@
                     </a>
                 </div>
                 <span>Или использовать вашу почту для регистрации</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="text" name="Name" placeholder="Name">
+                <input type="email" name="Email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
                 <button>Sign Up</button>
             </form>
         </div>
 
         <div class="form-container sign-in">
-            <form action="main.html">
+            <form action="log.php" method="post">
                 <h1>Войти в Аккаунт</h1>
                 <div class="social-icons">
                     <a href="#" class="icon">
@@ -47,8 +47,8 @@
                     </a>
                 </div>
                 <span>Или использовать вашу почту для входа</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="email" name="Email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
                 <a href="#">Забыли Пароль?</a>
                 <button type="submit">Sign In</button>
             </form>

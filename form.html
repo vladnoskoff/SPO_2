@@ -9,27 +9,27 @@
 <body>
     <section class="container">
         <header>Заполните Форму</header>
-        <form action="#" class="form">
+        <form name="form" action="form.php" method="POST" class="form" onsubmit="return validateForm()">
             <div class="input-box">
                 <label>Полное Имя</label>
-                <input type="text" placeholder="Введите ваше полное имя" required>
+                <input type="text" name="FullName" placeholder="Введите ваше полное имя" required>
             </div>
 
             <div class="column">
                 <div class="input-box">
                     <label>Номер Телефона</label>
-                    <input type="number" placeholder="Введите ваш номер телефона" required>
+                    <input type="number" name="Number" placeholder="Введите ваш номер телефона" required>
                 </div>
 
                 <div class="input-box">
                     <label>Дата Вывоза</label>
-                    <input type="date" placeholder="Введите дату вывоза мусора" required>
+                    <input type="date" name="Date" placeholder="Введите дату вывоза мусора" required>
                 </div>
             </div>
             
             <p class="hz">Тип Мусора</p>
             <div class="select-box">
-                <select>
+                <select name="Type">
                     <option hidden>Тип мусора</option>
                     <option>Твердые коммунальные отходы (ТКО)</option>
                     <option>Крупногабаритный мусор (КГМ)</option>
@@ -41,15 +41,15 @@
                 <h3>Объём вывозимого мусора</h3>
                 <div class="volume-option">
                     <div class="volume">
-                        <input type="radio" id="check" name="volume">
+                        <input type="radio" id="check" name="Volume" value="8">
                         <label for="check-8">8 м3</label>
                     </div>
                     <div class="volume">
-                        <input type="radio" id="check" name="volume" checked>
+                        <input type="radio" id="check" name="Volume" value="20-27" checked>
                         <label for="check-20">20-27 м3</label>
                     </div>
                     <div class="volume">
-                        <input type="radio" id="check" name="volume">
+                        <input type="radio" id="check" name="Volume" value="32-38">
                         <label for="check-32">32-38 м3</label>
                     </div>
                 </div>
@@ -57,9 +57,22 @@
 
             <div class="input-box">
                 <label>Адрес</label>
-                <input type="text" placeholder="Введите ваш адрес" required>
-                <input type="text" placeholder="Повторно введите ваш адрес" required>
-                <input type="number" placeholder="Введите ваш почтовый индекс" required>
+                <input type="text" name="Address" placeholder="Введите ваш адрес" required>
+                <input type="text" name="ConfirmAddress" placeholder="Повторно введите ваш адрес" required>
+                <input type="number" name="Postcode" placeholder="Введите ваш почтовый индекс" required>
+                <script>
+                    function validateForm() {
+                        var address = document.forms["form"]["Address"].value;
+                        var confirmAddress = document.forms["form"]["ConfirmAddress"].value;
+                    
+                        if (address != confirmAddress) {
+                            alert("Введенные адреса не совпадают. Пожалуйста, введите адрес еще раз.");
+                            return false;
+                        }else{
+                            alert("Заявка отправлена");
+                        }
+                    }
+                </script>
             </div>
 
             <button>Отправить заявку</button>
